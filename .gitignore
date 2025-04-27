@@ -1,0 +1,10 @@
+/.circleci
+/.env.example
+/.pytest_cache
+/.venv
+/Dockerfile
+/README.md
+/dist
+/requirements.txt
+/src
+/tests

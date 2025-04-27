@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stellar-harvest-ie-stream"
+version = "0.1.0"
+description = "Kafka client factories and stream configuration for StellarHarvest Insight Engine"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  { name = "Machine Learning Maverick", email = "github@machinelearningmaverick.com" }
+]
+dependencies = [
+  "kafka-python>=2.0.2",
+  "pydantic>=1.10.2",
+  "pydantic-settings>=2.0.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["stellar_harvest_ie_stream*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-s -q --disable-warnings --strict-markers"
+log_cli = true
+log_cli_level = "DEBUG"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.2.0",
+  "pytest-mock>=3.10.0"
+]
