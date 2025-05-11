@@ -65,7 +65,8 @@ source .venv/bin/activate
 
 # build wheel + sdist
 echo "📦 Installing locally and building artifacts..."
-pip install --quiet -e . build twine
+pip install -r requirements.txt --upgrade
+pip install --quiet --upgrade -e . build twine
 python3 -m build
 
 # prepare list of files to upload

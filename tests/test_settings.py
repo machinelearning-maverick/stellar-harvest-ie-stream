@@ -14,8 +14,8 @@ def test_default_stream_settings(monkeypatch):
 
     # instantiate without env file
     ss = StreamSettings()
-    assert ss.kafka_uri == "localhost:9092"
-    assert ss.swpc_topic == "raw-space-weather"
+    assert ss.kafka_uri == "kafka:9092"
+    assert ss.swpc_topic == "stellar-harvest-ie-raw-space-weather"
 
 
 def test_env_override_streamsettings(monkeypatch):
