@@ -1,3 +1,4 @@
+stellar-harvest-ie-producers
 kafka-python>=2.0.2
 pydantic>=1.10.2
 pydantic-settings>=2.0.0

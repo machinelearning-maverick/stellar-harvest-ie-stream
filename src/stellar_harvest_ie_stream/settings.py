@@ -14,8 +14,8 @@ class StreamSettings(BaseSettings):
 
     model_config = SettingsConfigDict(env_file=None)
 
-    kafka_uri: str = Field("localhost:9092", env=KAFKA_URI)
-    swpc_topic: str = Field("raw-space-weather", env=KAFKA_TOPIC_SWPC)
+    kafka_uri: str = Field("kafka:9092", env=KAFKA_URI)
+    swpc_topic: str = Field("stellar-harvest-ie-raw-space-weather", env=KAFKA_TOPIC_SWPC)
 
 
 settings = StreamSettings()
