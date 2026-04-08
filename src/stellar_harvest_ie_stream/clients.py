@@ -2,7 +2,7 @@ import json
 
 from stellar_harvest_ie_config.utils.log_decorators import log_io
 from kafka import KafkaProducer, KafkaConsumer
-from .settings import settings
+from stellar_harvest_ie_stream.settings import settings
 
 
 @log_io()
