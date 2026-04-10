@@ -1,8 +1,10 @@
 import logging
 
 from pydantic import Field
+from stellar_harvest_ie_config.logging_config import setup_logging
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
+setup_logging()
 logger = logging.getLogger(__name__)
 
 KAFKA_URI = "KAFKA_URI"
