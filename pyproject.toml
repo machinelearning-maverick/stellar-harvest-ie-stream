@@ -17,8 +17,6 @@ dependencies = [
   "pydantic-settings>=2.0.0",
   "stellar-harvest-ie-config",
 ]
-  # "stellar-harvest-ie-models",
-  # "stellar-harvest-ie-producers",
 
 [tool.setuptools.packages.find]
 where = ["src"]
