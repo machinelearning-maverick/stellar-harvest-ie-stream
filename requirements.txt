@@ -1,4 +1,9 @@
 kafka-python>=2.0.2
 pydantic>=1.10.2
 pydantic-settings>=2.0.0
-stellar-harvest-ie-config>=0.1.2
+
+# Internal modules live in pyproject.toml 
+# and are installed by the Dockerfile's pinned-version layer.
+# Listing them here would break layer caching.
+# -----
+# stellar-harvest-ie-config>=0.1.2
