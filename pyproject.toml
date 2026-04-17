@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "stellar-harvest-ie-stream"
-version = "0.1.1"
+version = "0.1.2"
 description = "Kafka client factories and stream configuration for StellarHarvest Insight Engine"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -15,7 +15,7 @@ dependencies = [
   "kafka-python>=2.0.2",
   "pydantic>=1.10.2",
   "pydantic-settings>=2.0.0",
-  "stellar-harvest-ie-config",
+  "stellar-harvest-ie-config>=0.1.2",
 ]
 
 [tool.setuptools.packages.find]
